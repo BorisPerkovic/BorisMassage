@@ -1,0 +1,7 @@
+Options -Indexes
+
+#Zaštita foldera lozinkom
+AuthUserFile c:/wamp64/www/Masaza/logs/.htpasswd
+AuthName "Unesite korisnicko ime i lozinku"
+AuthType Basic
+require valid-user

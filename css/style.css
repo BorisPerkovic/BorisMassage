@@ -1,0 +1,372 @@
+/*===================================
+
+-Custom CSS stylesheet,
+-Mobile first,
+-Fully responsive,
+-This website was made in Bootstrap version 4.5,
+-Created by Boris Perkovic,
+-Location: Belgrade, Serbia
+-Massage website in Belgrade,
+-PHP Web Developer,
+-Created: 2021-01-10
+-borisperkovic89@yahoo.com
+
+====================================*/
+
+/*-----------
+GENERAL
+-----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: black;
+    padding-top: 77px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:900;
+    color:black;
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    color: #000;
+}
+a:hover{
+    color:black;
+    text-decoration: underline;
+}
+a:active{
+    color: #fff;
+}
+h2::after{
+    content:"";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: rgb(241, 204, 147);
+}
+.py-4{
+    padding: 120px 0 !important;
+}
+.offer{
+    font-weight: 500;
+}
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+  }
+  
+  .sk-rotating-plane {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(241, 204, 147);
+    -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+            animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+  
+  @-webkit-keyframes sk-rotatePlane {
+    0% {
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+              transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+    50% {
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+              transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+    100% {
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+              transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+  
+  @keyframes sk-rotatePlane {
+    0% {
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+              transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+    50% {
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+              transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+    100% {
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+              transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+/*================
+NAV-BAR SECTION
+=================*/
+#logo{
+    height: 65px;
+    width: auto;
+}
+.navbar{
+    padding: 0px 15px;
+    background: rgb(241, 204, 147);
+    opacity: 0.9;
+    border-bottom: 2px solid #FFF;
+}
+.navbar-brand{
+    margin-right: 40px;
+}
+#navigation .nav-link{
+    padding-right: 20px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+#navigation .nav-link:hover{
+    color: rgb(228, 27, 37);
+    transition: color 0.2s ease-in-out;
+}
+#socials i{
+    font-size: 25px;
+    padding-right: 20px;
+    margin-top: 22px;
+}
+#socials a:hover{
+    border-bottom: none;
+}
+.fa-facebook:hover{
+    color: rgb(37, 74, 238);
+}
+.fa-instagram:hover{
+    color: rgb(255, 0, 0);
+}
+/*=====================
+HERO-JUMBOTRON SECTION
+=====================*/
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("../pics/pic4.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 300px 0px;
+    margin: 0px;
+    color: rgb(240, 195, 128);
+}
+.hero h1{
+    color:  rgb(240, 195, 128);
+}
+/*==============================================
+ MASAGE SECTION-same CSS for all type of masage
+===============================================*/
+.relax-madero{
+    background: rgb(241, 239, 239);
+}
+.relax-madero img{
+    border-radius: 40px;
+}
+.east-anti img{
+    border-radius: 40px;
+}
+/*=================
+ PARALLAX SECTION
+==================*/
+#parralax{
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../pics/parralax.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 350px;
+}
+
+/*================
+ FOOTER SECTION
+=================*/
+#footer{
+    background: rgb(241, 204, 147);
+    padding: 20px 20px;  
+}
+.fa-envelope{
+    font-size: 20px;
+    color:rgb(67, 99, 241);
+}
+.fa-phone{
+    font-size: 20px;
+    color:rgb(24, 150, 24);
+}
+.fa-viber{
+    font-size: 20px;
+    color:rgb(100, 3, 100);
+}
+.fa-whatsapp{
+    font-size: 21px;
+    color:rgb(7, 206, 7);
+}
+#footer .fa-facebook{
+    font-size: 25px;
+    color: blue;
+}
+#footer .fa-instagram{
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+}
+
+/*================
+ COPYRIGHT SECTION
+=================*/
+#copy{
+    padding-top: 15px;
+    background: #000;
+    color: rgb(90, 89, 89); 
+}
+#copy a{
+    color: #ccc;
+}
+#copy a:hover{
+    text-decoration: none;
+}
+
+/*================
+ CONTACT SECTION
+=================*/
+#contact-head-text{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#form-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgb(241, 239, 239);
+    color:#686666;
+}
+#form-section h6{
+    color:#686666;
+}
+#submit{
+    color: #000;
+    background: rgb(241, 204, 147);
+}
+#submit:hover{
+    color: #000;
+    background: rgb(241, 188, 108);
+}
+/*================================
+ TERMINS AND PRICE UPDATE SECTION
+=================================*/
+#termins_price{
+    padding: 0px;
+}
+#top-navbar .nav-link{
+    color: #fff;
+    opacity: 0.85;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#top-navbar .nav-link:hover{
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    opacity: 0.8;
+}
+#top-navbar .nav-link.active{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+#bottom-navbar{
+    padding: 15px 10px 10px 10px;
+    background: #e4e5e6;
+}
+#termin-table{
+    margin-top: 15px;
+}
+#termin-table thead{
+    background: #e4e5e6;
+}
+#termin_result{
+    background: #e4e5e6;
+}
+#price-bottom-nav{
+    padding: 15px;
+}
+#myTabContent{
+    padding: 15px;
+}
+.min-width{
+    width: 150px;
+}
+
+/*================================
+ CENOVNIK SECTION
+=================================*/
+.table-wrapper{
+    max-width: 700px;
+    margin: 10px auto;
+}
+.table-margin{
+    margin-top: 30px;
+}
+
+/* Back top */
+.go-top {
+    background-color: #222;
+    bottom: 2em;
+    right: 2em;
+    color: #ffffff;
+    font-size: 32px;
+    display: none;
+    position: fixed;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+.go-top:hover {
+    background: #f2545f;
+    color: #ffffff;
+}
+
+/*=============
+ MEDIA QUERY
+===============*/
+@media (max-width: 991px) {
+
+    body{
+        padding-top: 77px;
+    }
+    
+}
+@media (max-width: 583px) {
+
+    #carosuelText{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 502px) {
+
+    .display-3{
+        font-size: 3.5rem;
+    }
+    
+}
+
